@@ -12,7 +12,6 @@ class FinanceVC: UITabBarBaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Finance"
-        // Do any additional setup after loading the view.
     }
     
 }

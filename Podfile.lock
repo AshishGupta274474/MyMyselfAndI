@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: 3a8304b451ecff880b9324f2639bbe8a742fcd0d
+PODS:
+  - synth-ios (1.0.0)
+
+DEPENDENCIES:
+  - synth-ios
+
+SPEC REPOS:
+  trunk:
+    - synth-ios
+
+SPEC CHECKSUMS:
+  synth-ios: b91d9176ecc7ff791d94df9aedafbf5a8c00f965
+
+PODFILE CHECKSUM: e201bd67e828120e94b3c6dc9dab5e50c22977d0
 
 COCOAPODS: 1.10.0

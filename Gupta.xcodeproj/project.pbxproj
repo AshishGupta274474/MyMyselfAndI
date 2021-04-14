@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		969CFD3F262657880011E8D6 /* TaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969CFD3E262657880011E8D6 /* TaskVC.swift */; };
 		969CFD47262657B20011E8D6 /* HealthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969CFD46262657B20011E8D6 /* HealthVC.swift */; };
 		969CFD4C262657D70011E8D6 /* GrowthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969CFD4B262657D70011E8D6 /* GrowthVC.swift */; };
+		96F8F740262755AB003C79F6 /* CreditCardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F8F73F262755AB003C79F6 /* CreditCardManager.swift */; };
+		96F8F747262755E3003C79F6 /* CreditCardModell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F8F746262755E3003C79F6 /* CreditCardModell.swift */; };
 		96FDBAFD2622C91E006154F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FDBAFC2622C91E006154F2 /* AppDelegate.swift */; };
 		96FDBAFF2622C91E006154F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FDBAFE2622C91E006154F2 /* SceneDelegate.swift */; };
 		96FDBB012622C91E006154F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FDBB002622C91E006154F2 /* ViewController.swift */; };
@@ -60,6 +62,8 @@
 		969CFD3E262657880011E8D6 /* TaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskVC.swift; sourceTree = "<group>"; };
 		969CFD46262657B20011E8D6 /* HealthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthVC.swift; sourceTree = "<group>"; };
 		969CFD4B262657D70011E8D6 /* GrowthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowthVC.swift; sourceTree = "<group>"; };
+		96F8F73F262755AB003C79F6 /* CreditCardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardManager.swift; sourceTree = "<group>"; };
+		96F8F746262755E3003C79F6 /* CreditCardModell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardModell.swift; sourceTree = "<group>"; };
 		96FDBAF92622C91E006154F2 /* Gupta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gupta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96FDBAFC2622C91E006154F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96FDBAFE2622C91E006154F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,7 +127,6 @@
 				DF7483F7136EF6479536F17E /* Pods-GuptaTests.debug.xcconfig */,
 				C5AB8210E9F2B268D917949A /* Pods-GuptaTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -138,7 +141,9 @@
 		969CFD32262655760011E8D6 /* Finance */ = {
 			isa = PBXGroup;
 			children = (
-				969CFD33262655980011E8D6 /* FinanceVC.swift */,
+				96F8F744262755BE003C79F6 /* Model */,
+				96F8F73E2627556A003C79F6 /* ViewController */,
+				96F8F73D26275564003C79F6 /* Manager */,
 			);
 			path = Finance;
 			sourceTree = "<group>";
@@ -165,6 +170,30 @@
 				969CFD4B262657D70011E8D6 /* GrowthVC.swift */,
 			);
 			path = Growth;
+			sourceTree = "<group>";
+		};
+		96F8F73D26275564003C79F6 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				96F8F73F262755AB003C79F6 /* CreditCardManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		96F8F73E2627556A003C79F6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				969CFD33262655980011E8D6 /* FinanceVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		96F8F744262755BE003C79F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				96F8F746262755E3003C79F6 /* CreditCardModell.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		96FDBAF02622C91E006154F2 = {
@@ -285,6 +314,7 @@
 				96FDBAF52622C91E006154F2 /* Sources */,
 				96FDBAF62622C91E006154F2 /* Frameworks */,
 				96FDBAF72622C91E006154F2 /* Resources */,
+				C6C63726BC7B001CF850DD4B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -322,6 +352,7 @@
 				96FDBB192622C920006154F2 /* Sources */,
 				96FDBB1A2622C920006154F2 /* Frameworks */,
 				96FDBB1B2622C920006154F2 /* Resources */,
+				BD3497699004D01B79CF8810 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -470,6 +501,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BD3497699004D01B79CF8810 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gupta-GuptaUITests/Pods-Gupta-GuptaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gupta-GuptaUITests/Pods-Gupta-GuptaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gupta-GuptaUITests/Pods-Gupta-GuptaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6C63726BC7B001CF850DD4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gupta/Pods-Gupta-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gupta/Pods-Gupta-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gupta/Pods-Gupta-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -479,6 +544,7 @@
 			files = (
 				96FDBB012622C91E006154F2 /* ViewController.swift in Sources */,
 				96FDBB772622F1A6006154F2 /* theme.swift in Sources */,
+				96F8F740262755AB003C79F6 /* CreditCardManager.swift in Sources */,
 				96FDBAFD2622C91E006154F2 /* AppDelegate.swift in Sources */,
 				96FDBB472622EFEA006154F2 /* UITabBarBaseVC.swift in Sources */,
 				969CFD47262657B20011E8D6 /* HealthVC.swift in Sources */,
@@ -487,6 +553,7 @@
 				96FDBAFF2622C91E006154F2 /* SceneDelegate.swift in Sources */,
 				969CFD4C262657D70011E8D6 /* GrowthVC.swift in Sources */,
 				96FDBB072622C91E006154F2 /* Gupta.xcdatamodeld in Sources */,
+				96F8F747262755E3003C79F6 /* CreditCardModell.swift in Sources */,
 				969CFD34262655980011E8D6 /* FinanceVC.swift in Sources */,
 				96FDBB7D2622F35F006154F2 /* UI+Extensions.swift in Sources */,
 				96FDBB852622F3C8006154F2 /* MMITabBarController.swift in Sources */,

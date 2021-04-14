@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "61BA2C86E3386D1045EDF93E1095F02A"
-               BuildableName = "Pods_Gupta_GuptaUITests.framework"
-               BlueprintName = "Pods-Gupta-GuptaUITests"
+               BlueprintIdentifier = "AC7409E46A9162B323DC50F32BBA8CA9"
+               BuildableName = "Synth.framework"
+               BlueprintName = "synth-ios"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

@@ -97,12 +97,6 @@ class MMITabBarController: UITabBarController, UITabBarControllerDelegate {
         customizeTabBar()
         self.delegate = self
         self.viewControllers = [taskNavVC,financeNavVC,healthNavVC,growthNavVC,moreNavVC]
-        
-        var testVC = UIViewController()
-        testVC.view.backgroundColor = UIColor.red
-        DispatchQueue.main.async {
-            self.present(testVC, animated: true, completion: nil)
-        }
     }
 
     func cleanUpStack(animation: Bool, completion: (()->())? = nil) {
